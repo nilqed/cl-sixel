@@ -9,6 +9,8 @@ to interface CL to Hayaki Saito's awesome `libsixel` (see link below) on the
 other. Using FFI seems to be unnecessary for the latter purpose because 
 running `img2sixel` with `UIOP` works fine.
 
+The main reason for this is PP in  `cl-weyl`. 
+
 
 ## Sixel
 
@@ -22,7 +24,7 @@ The following tests were made with
 
     (display-sixel-data (test1))
     
-in `sixel.lisp`. The format is very simple in principle.
+in `sixel.lisp`. The format is very simple in principle (also see header there).
 
 
 ![mlterm1](docs/sixel-mlterm.png)
@@ -34,7 +36,7 @@ in `sixel.lisp`. The format is very simple in principle.
 
 ## src/libsixel.lisp
 
-The following is more or less a tranlsation of `latex2sixel` to CL.
+The following is more or less a tranlsation of `latex2sixel`[^1] to CL.
 
 ![mlterm2](docs/sixel-mlterm2.png)
 
@@ -47,4 +49,7 @@ The following is more or less a tranlsation of `latex2sixel` to CL.
 
 
 
+[^1]:https://github.com/nilqed/latex2sixel
+
+:date:
 
