@@ -19,6 +19,25 @@ The main reason for this is PP in  `cl-weyl`.
 * https://www.vt100.net/docs/vt3xx-gp/chapter14.html
 
 
+## Prerequisites
+
+* A sixel capable terminal (xterm, mlterm ...)
+  
+  https://www.arewesixelyet.com/
+
+  * **xterm** (sixel by default, ReGIS optional)
+    https://github.com/xterm-x11/xterm.dev
+    https://invisible-island.net/xterm/xterm.html
+  * **mlterm** (sixel by default) excellent when configured!)
+    https://github.com/arakiken/mlterm
+    
+    more https://github.com/saitoha/libsixel#terminal-requirements
+
+* libsixel (https://github.com/saitoha/libsixel#install)
+* img2sixel (incldued/ see https://github.com/saitoha/libsixel#img2sixel)
+
+CLs tested so far: sbcl, npt, ecl, abcl.
+
 ## src/sixel.lisp
 The following tests were made with
 
