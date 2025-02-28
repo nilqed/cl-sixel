@@ -9,7 +9,7 @@ to interface CL to Hayaki Saito's awesome `libsixel` (see link below) on the
 other. Using FFI seems to be unnecessary for the latter purpose because 
 running `img2sixel` with `UIOP` works fine.
 
-The main reason for this is PP in  `cl-weyl`. 
+The main reason for this is PP in  `cl-weyl`[^2]. 
 
 
 ## Sixel
@@ -41,13 +41,15 @@ A sixel capable terminal (xterm, mlterm ...)
 
 To run `libsixel.lisp`:
 
+latex and dvipng
+
 libsixel ==> https://github.com/saitoha/libsixel#install
 
 img2sixel (incldued) ==> https://github.com/saitoha/libsixel#img2sixel)
 
 CLs tested so far: sbcl, npt, ecl, abcl.
 
-[GnuPlot](http://www.gnuplot.info/) supports sixel as well:
+[GnuPlot](http://www.gnuplot.info/) supports sixel as well (quick check):
 
 ```
    gnuplot> set terminal sixel
@@ -71,11 +73,14 @@ The following tests were made with
     
 in `sixel.lisp`. The format is very simple in principle (also see header there).
 
-
+### mlterm
 ![mlterm1](docs/sixel-mlterm.png)
 
+
+### xterm
 ![xterm1](docs/sixel-xterm.png)
 
+### domterm
 ![domterm1](docs/sixel-domterm.png)
 
 
@@ -95,6 +100,7 @@ The following is more or less a tranlsation of `latex2sixel`[^1] to CL.
 
 
 [^1]:https://github.com/nilqed/latex2sixel
+[^2]:https://github.com/nilqed/cl-weyl
 
 :date:
 
