@@ -60,7 +60,7 @@ CLs tested so far: sbcl, npt, ecl, abcl.
  
 If your terminal is lucky then ...
 
-![gnuplot:test]gnuplot.png)
+![gnuplot:test](docs/gnuplot.png)
 
 
 
