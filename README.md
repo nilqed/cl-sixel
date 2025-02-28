@@ -21,22 +21,48 @@ The main reason for this is PP in  `cl-weyl`.
 
 ## Prerequisites
 
-* A sixel capable terminal (xterm, mlterm ...)
+To run `sixel.lisp`:
+
+A sixel capable terminal (xterm, mlterm ...)
   
   https://www.arewesixelyet.com/
 
   * **xterm** (sixel by default, ReGIS optional)
-    https://github.com/xterm-x11/xterm.dev
-    https://invisible-island.net/xterm/xterm.html
-  * **mlterm** (sixel by default) excellent when configured!)
-    https://github.com/arakiken/mlterm
-    
-    more https://github.com/saitoha/libsixel#terminal-requirements
 
-* libsixel (https://github.com/saitoha/libsixel#install)
-* img2sixel (incldued/ see https://github.com/saitoha/libsixel#img2sixel)
+      https://github.com/xterm-x11/xterm.dev
+    
+      https://invisible-island.net/xterm/xterm.html
+    
+  * **mlterm** (sixel by default) excellent when configured!)
+
+    https://github.com/arakiken/mlterm
+
+  * more ==> https://github.com/saitoha/libsixel#terminal-requirements
+
+To run `libsixel.lisp`:
+
+libsixel ==> https://github.com/saitoha/libsixel#install
+
+img2sixel (incldued) ==> https://github.com/saitoha/libsixel#img2sixel)
 
 CLs tested so far: sbcl, npt, ecl, abcl.
+
+[GnuPlot](http://www.gnuplot.info/) supports sixel as well:
+
+```
+   gnuplot> set terminal sixel
+
+   Terminal type is now 'sixelgd'
+   Options are 'notruecolor nocrop enhanced butt anchor size 640,480 font "arial,12.0" '
+   gnuplot>
+   gnuplot> test
+```
+ 
+If your terminal is lucky then ...
+
+![gnuplot:test]gnuplot.png)
+
+
 
 ## src/sixel.lisp
 The following tests were made with
