@@ -27,7 +27,7 @@ A sixel capable terminal (xterm, mlterm ...)
   
   https://www.arewesixelyet.com/
 
-  * **xterm** (sixel by default, ReGIS optional)
+  * **xterm** (sixel by default, ReGIS[^3] optional)
 
       https://github.com/xterm-x11/xterm.dev
     
@@ -106,6 +106,7 @@ Testing `png` and `jpg` formats:
 
 [^1]:https://github.com/nilqed/latex2sixel
 [^2]:https://github.com/nilqed/cl-weyl
+[^3]:https://github.com/nilqed/cl-regis
 
 :date:
 
