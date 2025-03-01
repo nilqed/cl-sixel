@@ -98,6 +98,11 @@ The following is more or less a tranlsation of `latex2sixel`[^1] to CL.
 ![mlterm3](docs/sixel-mlterm3.png)
 
 
+## Image to Sixel
+Testing `png` and `jpg` formats:
+
+![img2sixel](docs/img2sixel1.png)
+
 
 [^1]:https://github.com/nilqed/latex2sixel
 [^2]:https://github.com/nilqed/cl-weyl

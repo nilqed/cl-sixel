@@ -78,7 +78,15 @@
 ;(latex-to-sixel tex-test1 :bg "White" :fg "Red" :size "18cm,4cm")
 ;(latex-to-sixel "$$Hello\\ \\LaTeX$$" :bg "White" :fg "Blue" :size "16cm,2cm")
 
+ (defconstant logo1 
+ "/home/kfp/quicklisp/local-projects/cl-sixel/docs/made-with-lisp.jpg")
 
+(defun image-to-sixel (file)
+  (uiop:run-program 
+    (format nil "img2sixel ~A" file) :output t :ignore-error-status t))
+    
+
+  
   
 
 
